@@ -17,7 +17,11 @@ class Aluno
     #[ORM\Column(type: "string")]
     private string $nome;
 
-    #[ORM\OneToMany(targetEntity: Telefone::class, mappedBy: Aluno::class)]
+    #[ORM\OneToMany(
+        targetEntity: Telefone::class, 
+        mappedBy: "aluno", 
+        cascade: ["remove", "persist"])
+    ]
     private Collection $telefones;
 
     public function __construct()
