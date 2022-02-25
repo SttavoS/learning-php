@@ -54,6 +54,6 @@ class Conta
 
     public function getCpfTitular(): string
     {
-        return $this->titular->getCpf()->getValue();
+        return $this->titular->getCpf();
     }
 }

@@ -1,10 +1,12 @@
 <?php
 
 require_once "src/Conta.php";
+require_once "src/Endereco.php";
 require_once "src/Titular.php";
 require_once "src/Cpf.php";
 
-$titular = new Titular('Gustavo Schneider', new Cpf('034.970.120-25'));
+$endereco = new Endereco('Bento Gonçalves', 'Limoeiro', 'Rua de cima', '787');
+$titular = new Titular('Gustavo Schneider', new Cpf('034.970.120-25'), $endereco);
 $conta = new Conta($titular);
 $conta->depositar(100);
 echo $conta->getNomeTitular() . PHP_EOL;
