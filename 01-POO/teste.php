@@ -1,9 +1,11 @@
 <?php
 
-require_once "src/Conta.php";
-require_once "src/Endereco.php";
-require_once "src/Titular.php";
-require_once "src/Cpf.php";
+require_once 'autoload.php';
+
+use Alura\Banco\Modelo\Conta\Conta;
+use Alura\Banco\Modelo\Conta\Titular;
+use Alura\Banco\Modelo\Cpf;
+use Alura\Banco\Modelo\Endereco;
 
 $endereco = new Endereco('Bento Gonçalves', 'Limoeiro', 'Rua de cima', '787');
 $titular = new Titular('Gustavo Schneider', new Cpf('034.970.120-25'), $endereco);
