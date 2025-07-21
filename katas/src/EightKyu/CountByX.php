@@ -1,6 +1,6 @@
 <?php
 
-namespace Katas\EightKyu\CountByX;
+namespace Katas\EightKyu;
 
 class CountByX
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Katas\Tests\EightKyu\CountByX;
+namespace EightKyu;
 
+use Katas\EightKyu\CountByX;
 use PHPUnit\Framework\Attributes\TestDox;
 use PHPUnit\Framework\TestCase;
-use Katas\EightKyu\CountByX\CountByX;
 
 class CountByXTest extends TestCase
 {
