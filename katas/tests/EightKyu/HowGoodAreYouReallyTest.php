@@ -9,7 +9,6 @@ use PHPUnit\Framework\TestCase;
 
 class HowGoodAreYouReallyTest extends TestCase
 {
-
     public static function dataProvider(): array
     {
         return [
